@@ -1,6 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+          "@shared/*": ["shared/*"]
+    },
     "outDir": "./dist/out-tsc",
     "baseUrl": "src",
     "sourceMap": true,
