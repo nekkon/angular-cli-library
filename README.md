@@ -13,7 +13,7 @@ Currently supports:
 * SCSS
 * lazy loading of modules
 * Custom commands to make your life easier
-* and everything else you would normally could do with an app generated with ng new. 
+* and everything else you would normally be able to do with an app generated with ng new. 
 
 Feel free to create an issue for a request or to fix something. 
 
