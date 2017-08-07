@@ -7,10 +7,10 @@ This starter is a result of many workarounds in order to make angular-cli work w
 Currently supports: 
 
 * Serving multiple apps at the same time
-* Production build apps (AOT)
+* Production build of multiple apps (with AOT)
 * Shared Library of components/modules ( can be used by each app )
 * Shared assets folder and polyfills. ( can be used by each app )
-* SCSS
+* Shared SCSS. ( can be used by each app )
 * lazy loading of modules
 * Custom commands to make your life easier
 * and everything else you would normally be able to do with an app generated with ng new. 
