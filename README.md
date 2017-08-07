@@ -35,7 +35,7 @@ Run `npm run app1:build` to build app1. Run `npm run app2:build` to build app2 e
 
 #### Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. To add to the right app.module specify as in the following example: `ng g component default --module ../app.module.ts`. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 #### Running unit tests
 

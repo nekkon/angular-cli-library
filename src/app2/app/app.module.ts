@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -5,10 +6,13 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+      AppComponent
   ],
   imports: [
-    BrowserModule
+      BrowserModule,
+      RouterModule.forRoot([
+          { path: '', loadChildren:'./views/default/default.module#DefaultModule'},
+      ])
   ],
   providers: [],
   bootstrap: [AppComponent]
