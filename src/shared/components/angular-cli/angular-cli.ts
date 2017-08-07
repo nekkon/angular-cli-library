@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-cli.css']
 })
 export class AngularCLI implements OnInit {
-    title = 'an extended version of angular-cli! This is a shared Module between multiple apps'
+    title = 'an extended version of a new app generated with ng new! This example uses a shared component/module between multiple apps'
     
     constructor() { }
 
