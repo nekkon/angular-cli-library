@@ -1,60 +1,92 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "project": {
-    "name": "angular-cli-library"
-  },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
-      "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+      "name": "angular-cli-library"
+    },
+    "apps": [
+        {
+            "name": "app1",
+            "root": "src",
+            "outDir": "dist/app1",
+            "assets": [
+                { "glob": "**/*", "input": "app1/assets/", "output": "./assets/" },
+                { "glob": "favicon.ico", "input": "app1/", "output": "./" },
+                { "glob": "**/*", "input": "shared/assets", "output": "./assets/" }
+            ],
+            "index": "app1/index.html",
+            "deployUrl": "./",
+            "main": "app1/main.ts",
+            "polyfills": "shared/other/polyfills.ts",
+            "test": "app1/test.ts",
+            "tsconfig": "tsconfig.app1.json",
+            "testTsconfig": "tsconfig.spec.json",
+            "prefix": "app1",
+            "styles": [
+                "app1/styles.scss",
+                "shared/other/styles.scss"
+            ],
+            "scripts": [],
+            "environmentSource": "app1/environments/environment.ts",
+            "environments": {
+              "dev": "app1/environments/environment.ts",
+              "prod": "app1/environments/environment.prod.ts"
+            }
+        },
+        {
+            "name": "app2",
+            "root": "src",
+            "outDir": "dist/app2",
+            "assets": [
+                { "glob": "**/*", "input": "app2/assets/", "output": "./assets/" },
+                { "glob": "favicon.ico", "input": "app2/", "output": "./" },
+                { "glob": "**/*", "input": "shared/assets", "output": "./assets/" }
+            ],
+            "index": "app2/index.html",
+            "deployUrl": "./",
+            "main": "app2/main.ts",
+            "polyfills": "shared/other/polyfills.ts",
+            "test": "app2/test.ts",
+            "tsconfig": "tsconfig.app2.json",
+            "testTsconfig": "tsconfig.spec.json",
+            "prefix": "app2",
+            "styles": [
+                "app2/styles.scss",
+                "shared/other/styles.scss"
+            ],
+            "scripts": [],
+            "environmentSource": "app2/environments/environment.ts",
+            "environments": {
+              "dev": "app2/environments/environment.ts",
+              "prod": "app2/environments/environment.prod.ts"
+            }
+        }
+    ],
+    "e2e": {
+      "protractor": {
+        "config": "./protractor.conf.js"
       }
-    }
-  ],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
-  "lint": [
-    {
-      "project": "src/tsconfig.app.json",
-      "exclude": "**/node_modules/**"
     },
-    {
-      "project": "src/tsconfig.spec.json",
-      "exclude": "**/node_modules/**"
+    "lint": [
+      {
+        "project": "src/tsconfig.app.json",
+        "exclude": "**/node_modules/**"
+      },
+      {
+        "project": "src/tsconfig.spec.json",
+        "exclude": "**/node_modules/**"
+      },
+      {
+        "project": "e2e/tsconfig.e2e.json",
+        "exclude": "**/node_modules/**"
+      }
+    ],
+    "test": {
+      "karma": {
+        "config": "./karma.conf.js"
+      }
     },
-    {
-      "project": "e2e/tsconfig.e2e.json",
-      "exclude": "**/node_modules/**"
+    "defaults": {
+      "styleExt": "css",
+      "component": {}
     }
-  ],
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
-  "defaults": {
-    "styleExt": "css",
-    "component": {}
-  }
 }
