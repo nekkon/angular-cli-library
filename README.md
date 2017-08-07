@@ -23,6 +23,14 @@ Star and support this project if you like it, to help it stay alive and maybe ev
 
 Versioning of this project will follow the same with Angular-cli. There will be a separate branch that will be working for each version (starting with 1.2.7)
 
+## Current Example
+
+In the example of this repo there are two apps (app1 and app2):
+* Each app is declared in angular-cli.json
+* Each app has its own tsconfig file. 
+* Each app can use the shared Library of components/providers/modules/assets and whatever else you want. In this example they share the `AngularCLIModule` module which is lazy loaded as a component of the default view/route.
+
+
 ## Commands
 
 #### Development server
