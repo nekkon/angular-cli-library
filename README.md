@@ -1,12 +1,18 @@
-# Angular Cli with Library
+# Angular Cli with Library support (1.2.7)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
+*This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
-This is an edited version of a new app generated with ng new. It is a result of workarounds in order to make it possible for angular-cli to work with a shared library.
+*This is an edited version of a new app generated with ng new. It is a result of workarounds in order to make it possible for angular-cli to work with a shared library of components/services/modules etc.
 
-It currently supports AOT, SCSS, lazy loading and everything you could do with a normal app generated with ng new. 
+*Currently supports AOT, SCSS, lazy loading and everything you would normally do with an app generated with ng new. 
 
-Commands have been added to make you life easier.
+*Commands have been added to make you life easier.
+
+*Feel free to create an issue for a request or to fix something. Star and support this project if you like it, to help it stay alive and maybe even be added to angular-cli.
+
+## Versioning
+
+Versioning of this project will follow the same with Angular-cli. There will be a separate branch that will be working for each version (starting with 1.2.7)
 
 ## Development server
 
@@ -14,7 +20,7 @@ Run `npm run app1` to serve app1. Run `npm run app2` to serve app2 etc. Names ca
 
 ## Build
 
-Run `npm run app1:build` to build app1. The build artifacts will be stored in the `dist/app1` directory. All builds have by default --prod.
+Run `npm run app1:build` to build app1. Run `npm run app2:build` to build app2 etc. The build artifacts will be stored in the `dist/app1` or `dist/app2` directory. All builds are for production ( --prod ).
 
 ## Code scaffolding
 
