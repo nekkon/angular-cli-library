@@ -1,27 +1,32 @@
-# AngularCliLibrary
+# Angular Cli with Library
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
+This is an edited version of a new app generated with ng new. It is a result of workarounds in order to make it possible for angular-cli to work with a shared library.
+
+It currently supports AOT, SCSS, lazy loading and everything you could do with a normal app generated with ng new. 
+
+Commands have been added to make you life easier.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run app1` to serve app1. Run `npm run app2` to serve app2 etc. Names can change if you want (package.json). You can have multiple apps running in your browser as each app is launched on a different port. Navigate to `http://localhost:4200/` or `http://localhost:4201/` for example. Each app will automatically reload if you change any of the source files.
+
+## Build
+
+Run `npm run app1:build` to build app1. The build artifacts will be stored in the `dist/app1` directory. All builds have by default --prod.
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Command not added yet.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Command not added yet.
 
 ## Further help
 
