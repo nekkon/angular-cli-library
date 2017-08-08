@@ -51,12 +51,12 @@ The build artifacts will be stored in the `dist/app1` or `dist/app2` directory. 
 
 #### Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. To add a component to app1 specify app.module as in the following example: `ng g component default --module app1/app.module.ts`. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. To add a component to app1 specify app.module as in the following example: `ng g component default --module ../app.module.ts`. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 #### Running unit tests
 
-* Run `npm run app1:test` to run .spec.ts tests in app1 folder. (runs `ng test --app app1`)  
-* Run `npm run app2:test` to run .spec.ts tests in app2 folder. (runs `ng test --app app2`)
+* Run `npm run app1:test` to run *.spec.ts tests in app1 folder. (runs `ng test --app app1`)  
+* Run `npm run app2:test` to run *.spec.ts tests in app2 folder. (runs `ng test --app app2`)
 
 #### Running end-to-end tests
 
