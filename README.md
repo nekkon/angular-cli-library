@@ -19,7 +19,7 @@ Currently supports:
 
 Feel free to create an issue for a request or to fix something. 
 
-Star and support this project if you like it, to help it stay alive and maybe even be added as a boilerplate/starter to angular-cli.
+Star and support this project if you like it, to help it stay alive and maybe even be added as a boilerplate/starter to angular-cli (e.x. ng new app-name --template library).
 
 ## Versioning
 
