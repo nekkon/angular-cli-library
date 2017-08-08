@@ -12,12 +12,13 @@ Currently supports:
 * Shared assets folder and polyfills. ( can be shared between each app )
 * Shared SCSS. ( can be shared between each app )
 * lazy loading of modules
+* Unit tests for each app
 * Custom commands to make your life easier
 * and everything else you would normally be able to do with an app generated with ng new. 
 
 Feel free to create an issue for a request or to fix something. 
 
-Star and support this project if you like it, to help it stay alive and maybe even be added to angular-cli.
+Star and support this project if you like it, to help it stay alive and maybe even be added as a boilerplate/starter to angular-cli.
 
 ## Versioning
 
@@ -35,23 +36,31 @@ In the example of this repo there are two apps (app1 and app2):
 
 #### Development server
 
-Run `npm run app1` to serve app1. Run `npm run app2` to serve app2 etc. Names can change if you want (package.json). You can have multiple apps running in your browser as each app is launched on a different port. Navigate to `http://localhost:4200/` or `http://localhost:4201/` for example. Each app will automatically reload if you change any of the source files.
+* Run `npm run app1` to serve app1 (runs `ng serve --app app1 --port 4200`)
+* Run `npm run app2` to serve app2 etc. (runs `ng serve --app app2 --port 4201`) 
+
+Names can change if you want (package.json). You can have multiple apps running in your browser as each app is launched on a different port. Navigate to `http://localhost:4200/` or `http://localhost:4201/` for example. Each app will automatically reload if you change any of the source files (if you edit your shared library both apps will reload if they are using it).
 
 #### Build
 
-Run `npm run app1:build` to build app1. Run `npm run app2:build` to build app2 etc. The build artifacts will be stored in the `dist/app1` or `dist/app2` directory. All builds are for production ( --prod ).
+* Run `npm run app1:build` to build app1. (runs `ng build --app app1 --prod`) 
+* Run `npm run app2:build` to build app2 etc. (runs `ng build --app app2 --prod`) 
+
+The build artifacts will be stored in the `dist/app1` or `dist/app2` directory. All builds are for production ( --prod ).
 
 #### Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. To add to the right app.module specify as in the following example: `ng g component default --module ../app.module.ts`. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. To add a component to app1 specify app.module as in the following example: `ng g component default --module app1/app.module.ts`. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 #### Running unit tests
 
-Command not added yet.
+* Run `npm run app1:test` to run .spec.ts tests in app1 folder. (runs `ng test --app app1`)  
+* Run `npm run app2:test` to run .spec.ts tests in app2 folder. (runs `ng test --app app2`)
 
 #### Running end-to-end tests
 
-Command not added yet.
+* Run `npm run app1:e2e` to run e2e tests from e2e/app1 folder. (runs `ng e2e --app app1`)  
+* Run `npm run app2:e2e` to run e2e tests from e2e/app2 folder. (runs `ng e2e --app app2`)
 
 #### Further help
 

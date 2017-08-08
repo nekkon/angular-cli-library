@@ -1,6 +1,6 @@
 {
   "name": "angular-cli-library",
-  "version": "0.0.0",
+  "version": "1.2.7",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,11 @@
     "app1": "ng serve --app app1 --port 4200",
     "app2": "ng serve --app app2 --port 4201",
     "app1:build": "ng build --app app1 --prod",
-    "app2:build": "ng build --app app2 --prod"
+    "app2:build": "ng build --app app2 --prod",
+    "app1:test": "ng test --app app1",
+    "app2:test": "ng test --app app2",
+    "app1:e2e": "ng e2e --app app1",
+    "app2:e2e": "ng e2e --app app2"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +37,7 @@
     "@angular/cli": "1.2.7",
     "@angular/compiler-cli": "4.3.2",
     "@angular/language-service": "4.3.2",
-    "@types/jasmine": "~2.5.53",
+    "@types/jasmine": "^2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
@@ -45,6 +49,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "minimist": "^1.2.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",

@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DefaultView } from './default.view';
+import { AngularCLI } from './angular-cli';
 
-describe('DefaultView', () => {
-  let component: DefaultView;
-  let fixture: ComponentFixture<DefaultView>;
+describe('Shared Angular CLI component/module', () => {
+    let component: AngularCLI;
+    let fixture: ComponentFixture<AngularCLI>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DefaultView ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+          declarations: [ AngularCLI ]
+        })
+        .compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DefaultView);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AngularCLI);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should be created', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should be created', () => {
+        expect(component).toBeTruthy();
+    });
 });

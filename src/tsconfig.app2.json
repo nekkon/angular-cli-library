@@ -12,10 +12,7 @@
     "include": [
         "app2/**/*"
     ],
-    "exclude": [
-        "test.ts",
-        "**/*.spec.ts",
-        "app1/**",
-        "shared/**"
+    "exclude":[
+         "**/*.spec.ts"
     ]
 }
