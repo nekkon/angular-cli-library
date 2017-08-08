@@ -13,6 +13,7 @@ Currently supports:
 * Shared SCSS. ( can be shared between each app )
 * lazy loading of modules
 * Unit tests for each app
+* E2E tests for each app
 * Custom commands to make your life easier
 * and everything else you would normally be able to do with an app generated with ng new. 
 
