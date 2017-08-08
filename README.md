@@ -11,7 +11,7 @@ Currently supports:
 * Shared Library of components/modules ( can be shared between each app with `@shared/` )
 * Shared assets folder and polyfills. ( can be shared between each app )
 * Shared SCSS. ( can be shared between each app )
-* lazy loading of modules
+* lazy loading of Shared modules
 * Unit tests for each app
 * E2E tests for each app
 * Custom commands to make your life easier
