@@ -44,8 +44,8 @@ Names can change if you want (package.json). You can have multiple apps running 
 
 #### Build
 
-* Run `npm run app1:build` to build app1. (runs `ng build --app app1 --prod`) 
-* Run `npm run app2:build` to build app2 etc. (runs `ng build --app app2 --prod`) 
+* Run `npm run app1:build` to build app1. (runs `ng build --app app1 --prod --build-optimizer`) 
+* Run `npm run app2:build` to build app2 etc. (runs `ng build --app app2 --prod --build-optimizer`) 
 
 The build artifacts will be stored in the `dist/app1` or `dist/app2` directory. All builds are for production ( --prod ).
 
