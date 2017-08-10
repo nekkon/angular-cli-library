@@ -1,4 +1,4 @@
-# Angular CLI with Library support (1.2.7)
+# Angular CLI with Library support (1.3.0)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli). It is an extended version of a new app generated with ng new. It adds Library support for multiple apps in a mono-repo.
 
