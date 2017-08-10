@@ -3,16 +3,10 @@
 
 const { SpecReporter } = require('jasmine-spec-reporter');
 
-var argv = require('minimist')(process.argv.slice(2));
-var path = './e2e/';
-if(argv.app){
-    path += argv.app;
-}
-
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-     path + '/**/*.e2e-spec.ts'
+    './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'chrome'
@@ -26,9 +20,8 @@ exports.config = {
     print: function() {}
   },
   onPrepare() {
-    console.log(path);
     require('ts-node').register({
-      project: path + '/tsconfig.e2e.json'
+      project: 'e2e/tsconfig.e2e.json'
     });
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }

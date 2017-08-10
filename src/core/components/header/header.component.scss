@@ -1,0 +1,7 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  height: 250px;
+  background: $brand-primary;
+}

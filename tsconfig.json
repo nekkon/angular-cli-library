@@ -1,11 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-          "@shared/*": ["shared/*"]
-    },
     "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -16,7 +12,7 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es2016",
+      "es2017",
       "dom"
     ]
   }
