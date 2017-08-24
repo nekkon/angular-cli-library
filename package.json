@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "library:publish": "npm publish src/shared",
     "update": "node scripts/update.js",
     "verify": "node scripts/verify.js",
     "app1": "ng serve --app app1 --port 4200",

@@ -6,6 +6,7 @@ This starter is a result of many workarounds in order to make angular-cli work w
 
 Currently supports: 
 
+* Library can be published to npm registry (angular-cli-library is an example)
 * Serving multiple apps at the same time
 * Production build of multiple apps (with AOT)
 * Shared Library of components/modules ( can be shared between each app with `@shared/` )
@@ -36,7 +37,7 @@ The repo also includes examples of some use cases to help you out:
 
 0. AngularCLI: `AngularCLI` module is lazy loaded from the shared Libary (@shared) as a component/module of the default view/route.
 1. Example1: In example 1 `Example1` module is lazy loaded from the shared Libary (@shared) as a view/route.
-2. Example2: In example 2, the lazy loaded shared module `Example1` lazy loads another shared module `Example2`.
+2. Example2: In example 2, the lazy loaded shared module `Example1` lazy loads another shared module `Example2`. Also `AngularCLI` module is lazily loaded and imported from the angular-cli-library (npm registry)
 
 ## Commands
 
@@ -46,6 +47,10 @@ The repo also includes examples of some use cases to help you out:
 * Run `npm run app2` to serve app2 etc. (runs `ng serve --app app2 --port 4201`) 
 
 Names can change if you want (package.json). You can have multiple apps running in your browser as each app is launched on a different port. Navigate to `http://localhost:4200/` or `http://localhost:4201/` for example. Each app will automatically reload if you change any of the source files (if you edit your shared library both apps will reload if they are using it).
+
+#### Library
+
+* Run `npm run library:publish` to publish your library to npm registry. It is the same as running `npm publish` in `src/shared` folder.
 
 #### Build
 
