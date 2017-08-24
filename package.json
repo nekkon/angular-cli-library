@@ -9,6 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "update": "node scripts/update.js",
+    "verify": "node scripts/verify.js",
     "app1": "ng serve --app app1 --port 4200",
     "app2": "ng serve --app app2 --port 4201",
     "app1:build": "ng build --app app1 --prod --build-optimizer",
