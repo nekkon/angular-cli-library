@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { DefaultComponent } from './default.component';
-import { AngularCLIModule } from "@shared/components/angular-cli/angular-cli.module";
+import { AngularCLIModule } from "angular-cli-library/components/angular-cli/angular-cli.module";
 
 @NgModule({
   declarations: [

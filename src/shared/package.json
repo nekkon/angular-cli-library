@@ -1,0 +1,27 @@
+{
+  "name": "angular-cli-library",
+  "version": "1.3.2",
+  "description": "npm package showcasing angular-cli-library by nekkon",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekkon/angular-cli-library.git"
+  },
+  "keywords": [
+    "angular-cli",
+    "angular",
+    "typescript",
+    "library",
+    "mono-repo",
+    "multiple-apps"
+  ],
+  "author": "nekkon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekkon/angular-cli-library/issues"
+  },
+  "homepage": "https://github.com/nekkon/angular-cli-library#readme"
+}
