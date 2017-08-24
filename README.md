@@ -12,7 +12,7 @@ Currently supports:
 * Shared assets folder and polyfills. ( can be shared between each app )
 * Shared SCSS. ( can be shared between each app )
 * lazy loading of Shared modules
-* Shared modules can lazy load other Shared modules
+* Shared modules can lazy load other Shared modules ( with/without routes )
 * Unit tests for each app
 * E2E tests for each app
 * Custom commands to make your life easier
