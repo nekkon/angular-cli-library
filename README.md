@@ -17,9 +17,10 @@ Currently supports:
 * Unit tests for each app
 * E2E tests for each app
 * Custom commands to make your life easier
-* and everything else you would normally be able to do with an app generated with ng new. 
 
-Feel free to create an issue for a request or to fix something. 
+and everything else you would normally be able to do with an app generated with ng new. 
+
+Feel free to ask questions, provide feedback, submit ideas, requests or create an issue. 
 
 Star and support this project if you like it, to help it stay alive and maybe even be added as a boilerplate/starter to angular-cli (e.x. ng new app-name --template library).
 
