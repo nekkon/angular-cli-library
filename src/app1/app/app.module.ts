@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     RouterModule.forRoot([
         { path: '', loadChildren:'./views/default/default.module#DefaultModule'},
+        { path: 'example1', loadChildren:'@shared/components/example1/example1.module#Example1Module'},
     ])
   ],
   providers: [],

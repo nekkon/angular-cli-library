@@ -1,4 +1,4 @@
-# Angular CLI with Library support (1.3.0)
+# Angular CLI with Library support (1.3.2)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli). It is an extended version of a new app generated with ng new. It adds Library support for multiple apps in a mono-repo.
 
@@ -12,6 +12,7 @@ Currently supports:
 * Shared assets folder and polyfills. ( can be shared between each app )
 * Shared SCSS. ( can be shared between each app )
 * lazy loading of Shared modules
+* Shared modules can lazy load other Shared modules
 * Unit tests for each app
 * E2E tests for each app
 * Custom commands to make your life easier
@@ -25,13 +26,16 @@ Star and support this project if you like it, to help it stay alive and maybe ev
 
 Versioning of this project will follow the same with Angular-cli. There will be a separate branch that will be working for each version (starting with 1.2.7)
 
-## Current Example
+## How to use this Starter
 
-In the example of this repo there are two apps (app1 and app2):
-* Each app is declared in angular-cli.json
-* Each app has its own tsconfig file. 
-* Each app can use the shared Library of components/providers/modules/assets and whatever else you want. In this example they share the `AngularCLIModule` module which is lazy loaded as a component of the default view/route.
+Just git clone this repo and start using it. It is like you created a new app with Angular-CLI (ng new) having made all the necessary changes so that you can use multiple apps with a shared Library of components.
 
+## Examples
+
+The repo also includes examples of some use cases to help you out:
+
+1. Example1: In example 1 `Example1` module is lazy loaded from the shared Libary (@shared) as a component of the default view/route.
+2. Example2: In example 2, the lazy loaded shared module `Example2 `lazy loads another shared module `Example2Lazy`.
 
 ## Commands
 

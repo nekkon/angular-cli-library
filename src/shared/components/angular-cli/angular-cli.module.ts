@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +9,7 @@ import { AngularCLI } from './angular-cli';
       AngularCLI
   ],
   imports: [
+      RouterModule,
       CommonModule
   ],
   exports:[
