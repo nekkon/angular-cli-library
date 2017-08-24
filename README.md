@@ -6,7 +6,7 @@ This starter is a result of many workarounds in order to make angular-cli work w
 
 Currently supports: 
 
-* Library can be published to npm registry (angular-cli-library is an example)
+* Library can be published and imported from npm registry (angular-cli-library is an example)
 * Serving multiple apps at the same time
 * Production build of multiple apps (with AOT)
 * Shared Library of components/modules ( can be shared between each app with `@shared/` )
