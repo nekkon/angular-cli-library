@@ -2,10 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-          "@shared/*": ["shared/*"]
+          "@shared/*": ["src/shared/*"]
     },
     "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",

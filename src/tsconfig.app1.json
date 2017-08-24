@@ -10,7 +10,8 @@
         "types": []
     },
     "include": [
-        "app1/**/*"
+        "app1/**/*",
+        "shared/**/*"
     ],
     "exclude":[
          "**/*.spec.ts"
