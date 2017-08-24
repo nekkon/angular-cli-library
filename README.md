@@ -28,7 +28,7 @@ Versioning of this project will follow the same with Angular-cli. There will be 
 
 ## How to use this Starter
 
-Just git clone this repo and start using it (run npm install after). The result would be the same if you had created a new app with Angular-CLI (ng new) having made all the necessary changes so that you can use multiple apps with a shared Library of components and have extra functionality.
+Just git clone this repo and start using it (run `npm install` after). The result would be the same if you had created a new app with Angular-CLI (ng new) having made all the necessary changes so that you can use multiple apps with a shared Library of components and have extra functionality.
 
 ## Examples
 
