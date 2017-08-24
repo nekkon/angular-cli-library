@@ -34,8 +34,9 @@ Just git clone this repo and start using it (run `npm install` after). The resul
 
 The repo also includes examples of some use cases to help you out:
 
-1. Example1: In example 1 `Example1` module is lazy loaded from the shared Libary (@shared) as a component of the default view/route.
-2. Example2: In example 2, the lazy loaded shared module `Example2 `lazy loads another shared module `Example2Lazy`.
+0. AngularCLI: `AngularCLI` module is lazy loaded from the shared Libary (@shared) as a component/module of the default view/route.
+1. Example1: In example 1 `Example1` module is lazy loaded from the shared Libary (@shared) as a view/route.
+2. Example2: In example 2, the lazy loaded shared module `Example1` lazy loads another shared module `Example2`.
 
 ## Commands
 
