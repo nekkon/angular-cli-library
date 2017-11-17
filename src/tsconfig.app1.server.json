@@ -6,15 +6,14 @@
         },
         "outDir": "../out-tsc/app",
         "baseUrl": ".",
-        "module": "commonjs",
-        "types": []
+        "module": "commonjs"
     },
     "include": [
         "app1/**/*",
         "shared/**/*"
     ],
     "exclude":[
-         "../**/*.spec.ts"
+         "**/*.spec.ts"
     ],
     "angularCompilerOptions": {
         "entryModule": "app1/app/app.server.module#AppServerModule"

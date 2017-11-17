@@ -42,6 +42,7 @@
     "core-js": "2.4.1",
     "rxjs": "^5.5.2",
     "ts-loader": "^3.1.1",
+    "@types/node": "latest",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

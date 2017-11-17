@@ -2,18 +2,21 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: {  server: './app1_server.ts' },
+    entry: {  server: './app1.server.ts' },
     resolve: { extensions: ['.js', '.ts'] },
     target: 'node',
     // this makes sure we include node_modules and other 3rd party libraries
     externals: [/(node_modules|main\..*\.js)/],
     output: {
-        path: path.join(__dirname, 'dist/app1-server'),
+        path: path.join(__dirname, './dist/app1-server'),
         filename: '[name].js'
     },
     module: {
         rules: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            { 
+                test: /\.ts$/, 
+                loader: 'ts-loader?configFile=src/tsconfig.app1.server.json' 
+            }
         ]
     },
     plugins: [
@@ -21,12 +24,12 @@ module.exports = {
         // for "WARNING Critical dependency: the request of a dependency is an expression"
         new webpack.ContextReplacementPlugin(
             /(.+)?angular(\\|\/)core(.+)?/,
-            path.join(__dirname, 'src'), // location of your src
+            path.join(__dirname, './src/app1'), // location of your src
             {} // a map of your routes
         ),
         new webpack.ContextReplacementPlugin(
             /(.+)?express(\\|\/)(.+)?/,
-            path.join(__dirname, 'src'),
+            path.join(__dirname, './src/app1'),
             {}
         )
     ]
