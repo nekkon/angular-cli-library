@@ -1,4 +1,4 @@
-# Angular CLI with Library support (1.3.2)
+# Angular CLI with Library support (1.5)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli). It is an extended version of a new app generated with ng new. It adds Library support for multiple apps in a mono-repo.
 
@@ -17,6 +17,7 @@ Currently supports:
 * Unit tests for each app
 * E2E tests for each app
 * Custom commands to make your life easier
+* Universal Integration for multiple apps (need to install webpack for local serve `npm install -g webpack`)
 
 and everything else you would normally be able to do with an app generated with ng new. 
 

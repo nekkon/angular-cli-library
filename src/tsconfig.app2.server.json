@@ -6,7 +6,7 @@
         },
         "outDir": "../out-tsc/app",
         "baseUrl": ".",
-        "module": "es2015",
+        "module": "commonjs",
         "types": []
     },
     "include": [
@@ -15,5 +15,8 @@
     ],
     "exclude":[
         "../**/*.spec.ts"
-    ]
+    ],
+    "angularCompilerOptions": {
+        "entryModule": "app2/app/app.server.module#AppServerModule"
+    }
 }

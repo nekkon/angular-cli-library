@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./example1.css']
 })
 export class Example1Component implements OnInit {
-    title = 'Example1: This component/module was lazy loaded from a Shared Library'
-    
-    constructor() { }
+      title = 'Example1: This component/module was lazy loaded from a Shared Library';
+      
+      constructor() { }
 
-    ngOnInit() {
-    }
+      ngOnInit() {
+      }
 
 }

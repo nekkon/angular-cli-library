@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
         AppComponent
     ],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({appId: 'app1'}),
         RouterModule.forRoot([
             { path: '', loadChildren:'./views/default/default.module#DefaultModule'},
             { path: 'example1', loadChildren:'@shared/components/example1/example1.module#Example1Module'},

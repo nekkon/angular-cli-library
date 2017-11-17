@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+              "@shared/*": ["shared/*"]
+        },
+        "outDir": "../out-tsc/app",
+        "baseUrl": ".",
+        "module": "commonjs",
+        "types": []
+    },
+    "include": [
+        "app1/**/*",
+        "shared/**/*"
+    ],
+    "exclude":[
+         "../**/*.spec.ts"
+    ],
+    "angularCompilerOptions": {
+        "entryModule": "app1/app/app.server.module#AppServerModule"
+    }
+}
